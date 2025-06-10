@@ -125,7 +125,7 @@ Durante la ejecución del script, verás mensajes en la terminal para indicar lo
 
 **Ejemplo de salida en la terminal**:
 
-```swift
+```
 🔄 Iniciando el procesamiento de archivos...
 📄 Procesando el archivo: C:/Users/rbueno/Documents/PDF's-Crudos/documento.pdf
 💾 Guardando el archivo procesado en: C:/Users/rbueno/Documents/PDF's-Procesados/documento-PROCESADO.pdf
