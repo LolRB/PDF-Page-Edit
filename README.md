@@ -72,62 +72,87 @@ El script requiere algunas bibliotecas de Python para funcionar correctamente. P
     ```
 
 ### 3. **Configurar el Script**
+
 Antes de ejecutar el script, debes asegurarte de tener las carpetas de entrada y salida configuradas correctamente.
 
-Carpeta de entrada: Asegúrate de tener todos los archivos PDF que deseas procesar en una carpeta específica.
+1. **Carpeta de entrada**: Aseguráte de tener toddos los archivos PDF que deseas procesar en una carpeta específica.
 
-Ejemplo:
+    **Ejemplo**:
 
-Ruta: C:/Users/rbueno/Documents/PDF's-Crudos
+    - **Ruta**: `C:/Users/rbueno/Documents/PDF's-Crudos`
 
-Todos los PDFs que deseas numerar deben estar en esta carpeta.
+    - Todos los PDFs que deseas numerar deben estar en esta carpeta.
 
-Carpeta de salida: El script guardará los archivos procesados en una carpeta de salida. El nombre de los archivos procesados tendrá el sufijo -PROCESADO al final.
+2. **Carpeta de salida**: El script guardará los archivos procesados en una carpeta de salida. El nombre de los archivos procesados tendrá el sufijo `-PROCESADO` al final.
 
-Ejemplo:
+    **Ejemplo**:
 
-Ruta: C:/Users/rbueno/Documents/PDF's-Procesados
+    - **Ruta**: `C:/Users/rbueno/Documents/PDF's-Procesados`
 
-Esta carpeta debe existir, o el script la creará automáticamente si no existe.
+    - Esta carpeta debe existir, o el script la creará automáticamente si no existe.
 
-IMPORTANTE: Si ya existe un archivo con el mismo nombre en la carpeta de salida, el script lo ignorará para evitar procesarlo nuevamente.
+    **IMPORTANTE**: Si ya existe un archivo con el mismo nombre en la carpeta de salida, el script lo ignorará para evitar procesarlo nuevamente.
 
-4. Ejecutar el Script
+### **4. Ejecutar el Script**
+
 Una vez que tengas todo configurado, es hora de ejecutar el script. En la terminal, ejecuta el siguiente comando:
 
-bash
-Copy
+```bash
 python app.py
-El script comenzará a procesar todos los archivos PDF en la carpeta de entrada, agregando los números de página al pie de cada página. Los archivos procesados se guardarán automáticamente en la carpeta de salida con el sufijo -PROCESADO agregado.
+```
 
-5. Verificar los Archivos Procesados
-Una vez que el script termine de ejecutarse, podrás encontrar los archivos procesados en la carpeta de salida (PDF's-Procesados). Los nombres de los archivos serán los mismos que los originales, pero con el sufijo -PROCESADO agregado al nombre del archivo.
+El script comenzará a procesar todos los archivos PDF en la carpeta de entrada, agregando los números de página al pie de cada página. Los archivos procesados se guardarán automáticamente en la carpeta de salida con el sufijo `-PROCESADO` agregado.
 
-Ejemplo:
+### **5. Verificar los Archivos Procesados**
 
-Archivo original: documento.pdf
+Una vez que el script termine de ejecutarse, podrás encontrar los archivos procesados en la carpeta de salida (`PDF's-Procesados`). Los nombres de los archivos serán los mismos que los originales, pero con el sufijo `-PROCESADO` agregado al nombre del archivo.
 
-Archivo procesado: documento-PROCESADO.pdf
+**Ejemplo**:
 
-6. Mensajes de Estado
+- Archivo original: `documento.pdf`
+
+- Archivo procesado: `documento-PROCESADO.pdf`
+
+### **6. Mensajes de Estado**
+
 Durante la ejecución del script, verás mensajes en la terminal para indicar lo siguiente:
 
-✅: El archivo ha sido procesado y guardado con éxito.
+- ✅: El archivo ha sido procesado y guardado con éxito.
 
-⚡: El archivo ya ha sido procesado previamente, por lo que se ha saltado.
+- ⚡: El archivo ya ha sido procesado previamente, por lo que se ha saltado.
 
-⚠️: Si hubo algún error al guardar el archivo.
+- ⚠️: Si hubo algún error al guardar el archivo.
 
-Ejemplo de salida en la terminal:
-swift
-Copy
+**Ejemplo de salida en la terminal**:
+
+```swift
 🔄 Iniciando el procesamiento de archivos...
 📄 Procesando el archivo: C:/Users/rbueno/Documents/PDF's-Crudos/documento.pdf
 💾 Guardando el archivo procesado en: C:/Users/rbueno/Documents/PDF's-Procesados/documento-PROCESADO.pdf
 ✅ Números de página agregados con éxito. El archivo procesado se guardó como 'C:/Users/rbueno/Documents/PDF's-Procesados/documento-PROCESADO.pdf'.
 ⚡ El archivo 'documento.pdf' ya ha sido procesado. Saltando...
 ✅ ¡El procesamiento ha terminado con éxito!
-Conclusión
+```
+
+## Conclusión
 Este script es una herramienta simple y eficiente para agregar números de página a múltiples archivos PDF en una carpeta. Sigue los pasos indicados para configurarlo y ejecutarlo, y podrás procesar todos tus archivos con facilidad.
 
 Si tienes alguna pregunta o necesitas asistencia, no dudes en contactar al equipo de soporte.
+
+## Notas Adicionales:
+
+- **Python**: Asegúrate de tener instalada la versión correcta de Python (3.7 o superior).
+
+- **Entorno Virtual**: Recomendamos el uso de un entorno virtual para gestionar las dependencias de manera más eficiente.
+
+- **Carpetas**: El script maneja automáticamente la creación de la carpeta de salida si no existe, y evita procesar archivos ya procesados.
+
+## 🧑‍💻 Author
+
+Proyecto desarrollado por **Rodrigo Bueno**.  
+
+Para preguntas o contribuciones, contáctame:
+
+📧 [ztmsiul79@gmail.com](mailto:ztmsiul79@gmail.com)  
+
+🐈‍⬛ [github.com/LolRB](https://github.com/LolRB)
